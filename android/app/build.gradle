@@ -57,7 +57,6 @@ android {
     buildTypes {
         debug {
             project.flutter.target = 'lib/main_dev.dart'
-            signingConfig signingConfigs.release
         }
         release {
             project.flutter.target = 'lib/main_beta.dart'
