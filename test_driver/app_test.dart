@@ -18,6 +18,8 @@ void main() {
     );
     test.test('Increment counter', () async {
       await driver.runUnsynchronized(() async {
+        await driver.waitFor(buttonFinder);
+        await delay(750);
         await driver.tap(buttonFinder);
 //        test.expect(await driver.getText(textFinder), "1");
 //        await driver.waitFor(find.text("Loading"));
@@ -30,4 +32,8 @@ void main() {
       driver.close();
     }
   });
+}
+
+Future<void> delay([int milliseconds = 250]) async {
+  await Future<void>.delayed(Duration(milliseconds: milliseconds));
 }
