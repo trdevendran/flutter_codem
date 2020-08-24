@@ -1,9 +1,14 @@
 tests:
   - test_driver/app.dart
-staging: /Users/builder/build_outputs
+staging: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
 devices:
   ios:
     iPhone XS Max:
       frame: false
       orientation: Portrait
-archive: /Users/builder/exported_artefacts
+  android:
+    Nexus 5 API 28:
+      frame: false
+      orientation: Portrait
+
+archive: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
