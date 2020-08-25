@@ -1,6 +1,7 @@
 tests:
   - test_driver/app.dart
-staging: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
+#staging: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
+staging: /Users/builder/build_outputs
 devices:
   ios:
     iPhone XS Max:
@@ -11,4 +12,5 @@ devices:
       frame: false
       orientation: Portrait
 
-archive: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
+#archive: /Users/deva/Documents/Workspace/Flutter/flutter_app/build
+archive: /Users/builder/exported_artefacts
